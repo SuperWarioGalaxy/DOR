@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Notificaciones</title>
+  <script>
+    function mostrarNotificacion() {
+      document.getElementById('notificacion').innerText = 'Cambio guardado';
+      document.getElementById('notificacion').setAttribute('role', 'alert');
+    }
+  </script>
+</head>
+<body>
+  <button onclick="mostrarNotificacion()">Guardar</button>
+  <div id="notificacion"></div>
+</body>
+</html>
