@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJd4V5X5hZkQzjw6v+P1p3YkP1p6/gWqZn7kPbdT+gKb6y4j1lckps6m4ZfF" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Boton -->
+    <!-- sin mejorar -->
+    <button type="button" class="btn btn-primary">Enviar</button>
+    <!-- mejorado -->
+    <button type="button" class="btn btn-primary" role="button" aria-label="Enviar formulario">Enviar</button>
+
+<!-- Modal -->
+    <!-- sin mejorar -->
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Título del modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Contenido del modal...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mejorado -->
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Título del modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="modalDescription">
+                    <p>Contenido del modal...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- menu desplegable -->
+    <!-- sin mejorar -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Opciones</button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Acción</a></li>
+          <li><a class="dropdown-item" href="#">Otra acción</a></li>
+          <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+        </ul>
+    </div>
+    <!-- mejorado -->
+    <div class="dropdown" role="menubar">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Opciones</button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
+          <li><a class="dropdown-item" href="#" role="menuitem">Acción</a></li>
+          <li><a class="dropdown-item" href="#" role="menuitem">Otra acción</a></li>
+          <li><a class="dropdown-item" href="#" role="menuitem">Algo más aquí</a></li>
+        </ul>
+    </div>
+      
+<!-- Alerta -->
+    <!-- sin mejorar -->
+    <div class="alert alert-warning" role="alert">
+        Este es un mensaje de advertencia.
+    </div>
+    <!-- mejorado -->
+    <div class="alert alert-warning" role="alert" aria-live="assertive" aria-atomic="true">
+        Este es un mensaje de advertencia.
+    </div>
+
+<!-- pestañas -->
+    <!-- sin mejorar -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Inicio</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Perfil</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contacto</a>
+        </li>
+    </ul>
+    <!-- mejorado -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist" aria-label="Pestañas de navegación">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" aria-labelledby="home-tab">Inicio</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" aria-labelledby="profile-tab">Perfil</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" aria-labelledby="contact-tab">Contacto</a>
+        </li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybI4XfL5j+Xx1fkw7l6l1UBj0ihV5yA/pmU2d6zT78Xx7je8z" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0U13fDhtpP1nBdFF/93zD2tJ7H7m1SH+p+Y6dV+HYc6S4r71" crossorigin="anonymous"></script>
+</body>
+</html>
